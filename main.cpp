@@ -19,10 +19,16 @@ int handleDestroyer() {
             }
         }
     }
+    return 0;
 }
 
-int main(int argc, char** argv)
+int main()
 {
-    handleDestroyer();
+    try {
+        handleDestroyer();
+    }
+    catch (...) {
+
+    }
     return 0;
 }
